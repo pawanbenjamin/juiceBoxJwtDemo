@@ -1,6 +1,6 @@
 const router = require('express').Router()
 
-router.get('/', (res, req, next) => {
+router.get('/', (req, res, next) => {
   try {
     res.send([
       { id: 1, content: 'I am a post' },
