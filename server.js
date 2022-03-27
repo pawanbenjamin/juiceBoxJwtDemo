@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const morgan = require('morgan')
 
+// this makes sure we can use .env variables in our app
 require('dotenv').config()
 
 app.use(morgan('dev'))
